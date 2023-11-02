@@ -125,7 +125,7 @@ console.log(characters)
 
 let femaleCharacters = []
 
-for(i = 0; i < starWarsCharacters.length; i ++){
+for(let i = 0; i < starWarsCharacters.length; i ++){
   if(starWarsCharacters[i].gender === "female"){
   femaleCharacters.push(starWarsCharacters[i])
 }
@@ -182,14 +182,13 @@ console.log(eyeColor)
 /* ESERCIZIO 6
   Usa un while loop per calcolare la massa totale dell'equipaggio. Salvala in una variabile chiamata "crewMass".
 */
-
-/* let crewMass = 0
+let crewMass = 0
 let i = 0
 while (i < starWarsCharacters.length){
   crewMass += starWarsCharacters[i].mass; i++
 }
 console.log(`la massa complessivo dei personaggi è ${crewMass} `)
- */
+
 
 
 /* ESERCIZIO 7
@@ -203,7 +202,7 @@ console.log(`la massa complessivo dei personaggi è ${crewMass} `)
 
   Una volta fatto, modifica la massa di qualche elemento dell'equipaggio e vedi se riesci ad ottenere un messaggio diverso.
 */
-let crewMass = 0
+
 for (let i = 0; i < starWarsCharacters.length; i++) {
   crewMass += starWarsCharacters[i].mass;
 }
